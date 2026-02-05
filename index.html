@@ -8,8 +8,31 @@
 </head>
 <body>
 
-<button>Complete Task</button>
-   <div> id="message"</div> 
+<button id="completeBtn">Complete Task</button>
+
+  <div id="messageBox"></div>
+
+  <script>
+    document.getElementById("completeBtn")
+      .addEventListener("click", function () {
+        alert("Task completed! Notification sent.");
+      });
+  </script>
+  <style>
+  #completeBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #messageBox {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+</style>
     
 </body>
 </html>
